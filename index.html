@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/ac39ff4106.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-color": "var(--main-color)",
+            "secondary-color": "var(--secondery-color)",
+            "white-color": "var(--white-color)"
+          },
+          fontFamily: {
+            "main-language": "var(--main-language)",
+            "secondary-language": "var(--secondery-language)"
+          }
+        },
+      },
+    };
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Wellness</title>
+</head>
+
+<body>
+  <header class="fixed left-0 top-0 z-20 min-w-screen">
+    <div class="container mx-auto py-4 px-4">
+      <div class="row">
+        <div>
+          <a class=" logo duration-500 text-white-color text-3xl	font-medium lg:text-4xl	" href="#">Silent</a>
+        </div>
+        <div>
+          <div class="menu-bar-con">
+            <a class="menu-slide-btn" href="#sideWidgetArea">
+              <div class="text">
+                Menu
+              </div>
+              <div class="ham-menu"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="section-1" class="relative  bg-primary-color flex justify-center items-center py-44 lg:min-h-screen ">
+      <div class="header_img bg-center overflow-hidden min-h-full absolute z-0 left-0 top-0 lg:max-h-full ">
+        <!-- <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2020/11/25/74707.jpg" alt=""> -->
+      </div>
+      <div class="overlay absolute z-10 min-h-full min-w-full bg-primary-color opacity-80 left-0 top-0 lg:min-h-screen"></div>
+      <div class="relative z-20">
+        <h1 class="text-white-color text-3xl  font-bold font-['main-language'] leading-snug text-center lg:text-6xl">Outside Health Starts <br> <span class="text-animation ">Inside</span> </h1>
+        <div class="text-center mt-8 cursor-pointer"><i class="header-arrow-animation fas text-3xl text-white-color fa-angle-double-down"></i></div>
+      </div>
+    </section>
+    <section id="section-2" class="section lg:section-lg">
+      <div class="lg:flex ">
+        <div class=" basis-6/12 lg:mr-8 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
+          <img src="images\carolyn-unsplash-1.jpg" alt="">
+        </div>
+        <div class=" basis-6/12 lg:mr-8 py-16">
+          <h2 class=" text-4xl  font-medium font-['main-language'] leading-snug my-12  lg:text-5xl w-4/5 ">Elevate Your Body and <span class="text-animation ">Mind</span> </h2>
+          <p class="text-xl mt-16 mb-8">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+            ocean.</p>
+          <button type="button" name="button">Explore amenities</button>
+        </div>
+      </div>
+    </section>
+    <section id="section-3" class="section">
+      <div class="lg:w-3/5 mb-20">
+        <p class="text-3xl leading-10">  Achieve your goals easier than ever before. We offer a wide range of rewarding amenities which are all personalized to specific your needs.</p>
+      </div>
+
+      <div class="amenities lg:flex justify-between">
+        <div class="amenitie duration-500  relative flex items-end pl-8 flex-auto h-96 pb-12 pt-96 bg-cover mt-4 bg-no-repeat hover:scale-105 lg:mr-12" style="background-image: url('images/amenities1.jpg') " data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-delay="0" data-aos-duration="1000">
+          <div class="duration-300 absolute z-10 left-0 top-0 w-full h-full opacity-80 bg-primary-color hover:opacity-0"  >
+
+          </div>
+          <div class="relative z-20">
+            <h3 class="text-white-color text-3xl font-['main-language'] font-bold mb-4">Nutritional Plans</h3>
+            <p class="text-white-color text-base font-thin ">Catered to suit your lifestyle.</p>
+          </div>
+        </div>
+
+        <div class="amenitie duration-500 relative flex items-end pl-8 flex-auto h-96 pb-12 pt-96 bg-cover   mt-4 bg-no-repeat hover:scale-105" style="background-image: url('images/amenities2.webp') " data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-delay="75" data-aos-duration="1000">
+          <div class="duration-300 absolute z-10 left-0 top-0 w-full h-full opacity-80 bg-secondary-color hover:opacity-0" >
+
+          </div>
+          <div class="relative z-20">
+            <h3 class="text-white-color text-3xl font-['main-language'] font-bold mb-4">Fitness Center</h3>
+            <p class="text-white-color text-base font-thin ">Custom programs built for you.</p>
+          </div>
+        </div>
+
+        <div class="amenitie duration-500  relative flex items-end pl-8 flex-auto h-96 pb-12 pt-96 bg-cover mt-4 bg-no-repeat hover:scale-105 lg:ml-12" style="background-image: url('images/amenities3.jpg')" data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-delay="150" data-aos-duration="1000">
+          <div class="duration-300 absolute z-10 left-0 top-0 w-full h-full opacity-80 bg-slate-800 hover:opacity-0" >
+
+          </div>
+          <div class="relative z-20">
+            <h3 class="text-white-color text-3xl font-['main-language'] font-bold mb-4">Full Day Spa</h3>
+            <p class="text-white-color text-base font-thin ">5,000 square feet of pure bliss.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-24">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 ">
+          <div class="">
+            <h2 class="font-medium mb-8 text-3xl font-['main-language']">Skin Care</h2>
+            <ul>
+              <li class="text-base mb-8 lg:text-xl">Vitamin C Cleanse</li>
+              <li class="text-base mb-8 lg:text-xl">Organic Tea Facial</li>
+              <li class="text-base mb-8 lg:text-xl">Ultra Hydration Facial</li>
+              <li class="text-base mb-8 lg:text-xl">Vampire Facial</li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="font-medium mb-8 text-3xl font-['main-language']">Psychology</h2>
+            <ul>
+              <li class="text-base mb-8 lg:text-xl">Mature life</li>
+              <li class="text-base mb-8 lg:text-xl">Prenatal well-being</li>
+              <li class="text-base mb-8 lg:text-xl">Relationship Counseling</li>
+              <li class="text-base mb-8 lg:text-xl">General Stress</li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="font-medium mb-8 text-3xl font-['main-language']">Grooming</h2>
+            <ul>
+              <li class="text-base mb-8 lg:text-xl">Blow-Outs</li>
+              <li class="text-base mb-8 lg:text-xl">General Styling</li>
+              <li class="text-base mb-8 lg:text-xl">Keratin Treatments</li>
+              <li class="text-base mb-8 lg:text-xl">Scalp Treatments</li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="font-medium mb-8 text-3xl font-['main-language']">Massage</h2>
+            <ul>
+              <li class="text-base mb-8 lg:text-xl">Therapeutic</li>
+              <li class="text-base mb-8 lg:text-xl">Deep Tissue</li>
+              <li class="text-base mb-8 lg:text-xl">Essential Oil</li>
+              <li class="text-base mb-8 lg:text-xl">Coupes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-4" class="section">
+      <div class="lg:flex flex-row-reverse ">
+        <div class=" basis-6/12 lg:mr-8 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
+          <img src="images\carolyn-unsplash-2.jpg" alt="">
+        </div>
+        <div class=" basis-6/12 lg:mr-8 py-16">
+          <h2 class=" text-4xl  font-medium font-['main-language'] leading-snug my-12  lg:text-5xl  ">Flourish with Optimism, Live <span class="text-animation ">Deliberately</span> </h2>
+          <p class="text-xl mt-16 mb-8 w-4/5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts.</p>
+          <!-- <button type="button" name="button">Explore amenities</button> -->
+        </div>
+      </div>
+    </section>
+    <section id="section-5" class="section relative">
+
+      <div class="mb-8 lg:mb-12">
+        <h3 class="font-['main-language'] font-medium text-4xl lg:text-5xl lg:w-2/5">Recent blog articles we’ve written</h3>
+      </div>
+      <div id="blogs-container" class="lg:flex relative">
+        <div class="absolute  left-2/4 top-0 -translate-x-3/4 -translate-y-2/4  photo-swing-container  ">
+          <img class="w-80 max-w-dfull photo-swing opacity-0 " src="images\blog-img1.jpg" alt="">
+        </div>
+        <div class="flex-1 py-8 lg:pr-8 blog-sector">
+          <h2 class="text-xl font-normal mb-8 lg:text-3xl">Always schedule time for daily meditation</h2>
+          <span class="meta-date font-normal">March 12, 2022</span>
+        </div>
+        <div class="flex-1 py-8 lg:pr-8 blog-sector">
+          <h2 class="text-xl font-normal mb-8 lg:text-3xl">Reinvent your nighttime routine with Salient</h2>
+          <span class="meta-date font-normal">February 8, 2022</span>
+        </div>
+        <div class="flex-1 py-8 lg:pr-8 blog-sector">
+          <h2 class="text-xl font-normal mb-8 lg:text-3xl">Taking the adventure you’ve been waiting for</h2>
+          <span class="meta-date font-normal">February 8, 2022</span>
+        </div>
+      </div>
+    </section>
+    <section id="section-6" class="video-section h-auto bg-[url('videos/poster3.jpg')] bg-no-repeat bg-center  bg-cover flex justify-center items-center lg:h-screen">
+      <div class="text-center py-20">
+        <div class="video-play-button h-24 w-24 rounded-full  border-solid border-2 cursor-pointer flex justify-center items-center mx-auto mb-16 duration-300 hover:scale-110 ">
+          <i class="fas fa-play duration-300 text-3xl text-white-color"></i>
+        </div>
+        <h2 class="text-white-color text-5xl font-['main-language'] lg:text-5xl ">Your Life, Rejuvenated</h2>
+      </div>
+      <div class="video-player-screen duration-300 fixed left-0 top-0 bg-black h-screen w-screen z-30 flex justify-center items-center invisible opacity-0">
+        <video class="w-screen lg:w-8/12" src="videos\wellness-home-video.mp4" controls  poster="posterimage.jpg"></video>
+      </div>
+    </section>
+    <section id="section-7" class="relative section bg-primary-color overflow-x-hidden pt-16 pb-32  lg:pt-32 lg:pb-60  ">
+      <div class="justify-center items-center lg:flex">
+        <div class="mb-12 lg:mr-28 text-white-color">
+          <p class="mb-12 text-2xl lg:text-3xl lg:leading-normal ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic commodi perferendis, vero non facere ipsa corporis. Eveniet odio molestias blanditiis.”</p>
+          <h3>Kara Lucas</h3>
+          <small class="opacity-70">job title</small>
+        </div>
+        <div class="mb-12 lg:mr-28 text-white-color">
+          <p class="mb-12 text-2xl lg:text-3xl lg:leading-normal ">lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic commodi perferendis, vero non facere ipsa corporis. Eveniet odio molestias blanditiis.”</p>
+          <h3>Kara Lucas</h3>
+          <small class="opacity-70">job title</small>
+        </div>
+      </div>
+      <div class="text-slider absolute left-0 bottom-0 py-4   flex justify-center ">
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-white-color text-5xl"><span class="text-3xl mr-4">⚬ </span>  a better life</h2>
+      </div>
+    </section>
+    <section id="section-8" class="relative section overflow-x-hidden ">
+      <div class="reverse-text-slider absolute left-0 top-0 py-4   flex justify-center ">
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+        <h2 class="w-72 -translate-x-full font-['main-language'] text-slate-900 text-5xl"><span class="text-3xl mr-4">⚬ </span>   awaits you</h2>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
