@@ -111,7 +111,8 @@ const pricing = [
 const pricingContainer = document.querySelector(".pricing-container");
 
 pricing.forEach( level => {
-  const div = `<div  class="duration-300 mb-8 p-8 w-full shadow-md items-center lg:flex border border-solid border-gray-300 rounded-lg hover:border-orange-500 hover:drop-shadow-2xl">
+  const div = `<div data-aos="fade-up" data-aos-duration="2000" >
+    <div  class=" zed mb-8 p-8 w-full shadow-md items-center lg:flex border border-solid border-gray-300 rounded-lg hover:border-orange-500 hover:drop-shadow-2xl" >
 
     <div class=" lg:flex lg:basis-1/3 items-center ">
       <svg class="mb-4  lg:mb-0" version="1.1" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 32 32">
@@ -127,18 +128,30 @@ pricing.forEach( level => {
       <h3 class="mb-4 pricing-price font-bold text-2xl lg:mb-0">$${level.price}/mo</h3>
       <button type="button" name="button"><a href="#">Join Now</a></button>
     </div>
-
+    </div>
   </div>`
   pricingContainer.insertAdjacentHTML("beforeend",div )
 } )
 
 
 
+// side menu
 
+const showSideMenuBtn = document.querySelector(".menu-bar-con");
+const sideMenu = document.querySelector(".side-menu");
+const sideMenuCloseBtn = document.querySelector(".ham-menu.in-menu")
 
+showSideMenuBtn.addEventListener("mouseenter" , ()=>{
+  sideMenu.classList.add("show")
+})
 
+sideMenuCloseBtn.addEventListener("click",closeSideMenu)
 
+sideMenu.addEventListener("mouseleave" , closeSideMenu)
 
+function closeSideMenu(){
+  sideMenu.classList.remove("show")
+}
 
 
 
