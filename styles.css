@@ -220,6 +220,10 @@ header .container .row:nth-child(1) .menu-bar-con .menu-slide-btn .ham-menu::aft
     transform: translateX(-18rem);
   }
 }
+.pricing-price
+{
+  font-family: var(--main-language)
+}
 
 @media (max-width :500px){
   .section
